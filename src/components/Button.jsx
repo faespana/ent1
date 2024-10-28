@@ -10,7 +10,14 @@ const Button = ({ setPhraseSelected, setBgSelected }) => {
     setBgSelected(photos[indexRandom2]);
   };
 
-  return <button onClick={handlePhrase}>Ver otra</button>;
+  return (
+    <button
+      className="ml-auto block cursor-pointer bg-violet-950 py-2 px-4 text-white rounded-md text-sm hover:brightness-200"
+      onClick={handlePhrase}
+    >
+      Ver otra
+    </button>
+  );
 };
 
 export default Button;
